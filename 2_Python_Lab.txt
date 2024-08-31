@@ -1,0 +1,194 @@
+String Operations in Python 
+
+1. Find the length of the string 
+   	a="string"
+   	print(len(a))
+2. Slice the string as per your choice 
+	b='string'
+	c=b[1:4]
+	print(c)
+3. Concatenate two strings
+	str1 = "Hello "
+	str2= "World"
+	con_str = str1 + str2
+	print(con_str)
+4. Convert in to lower case in to uppercase character 
+	a='sid'
+	b=a.upper()
+	print(b)
+5. Convert upper case into lower case characters
+	a='SID'
+	b=a.lower()
+	print(b)
+6. convert the character into Unicode ( Ascii values)
+	Asc='A'
+	uni=ord(Asc)
+	print(uni)
+7. convert Unicode into character 
+	Uni=65
+	character=chr(65)
+	print(character)
+
+8. Check whether the given "substring" exists in the string
+       	a='String'
+	if 'rin' in a:
+	print('yes,it is present')
+	else:
+	print('no, it is not present')
+
+
+9. Replace the character 'k' with 'h'
+	a=input('enter the text')
+	b=a.replace('k','h')
+	print(b)
+		
+10. Pad the string with "x" at the end
+	a='siddharth'
+	b=len(a)+1
+	c=a.ljust(b,'x')
+	print(c)
+		
+
+11. remove leading and trailing whitespace or specified characters from the string
+
+
+
+
+
+
+
+
+12. split the given string in to group of five characters 
+
+
+
+
+	
+
+13. count total number of words 
+	text='hey how are you doing '
+	word=text.split()
+	a=len(word)
+ 	print(a)
+
+
+14. Find the frequency of each characters in the string 
+
+
+	text = "this is to count the frequency of text"
+	frequency = {}
+	for char in text:
+    		if char in frequency:
+        		frequency[char] += 1
+    		else:
+        
+       			 frequency[char] = 1
+	for char, freq in frequency.items():
+    		print(f"'{char}': {freq}")
+STDIN and File operators 
+
+15. get the file name from the user
+	import os
+	a=input('enter the file name')
+
+
+ 
+16. check the file exist or not 
+	import os
+	a=input('enter the file name')
+	if os.path.isfile(a):
+		print('file exists')
+	else:
+		print('file doesn't exsist')
+
+
+Looping and File handling 
+
+17. read the contents from the file 
+
+
+
+
+18. reverse the contents from the file 
+19. Write into the file 
+
+Math operations 
+20. convert Frequency in to percentage (continuation of 12th Question) 
+
+text = "this is to count the frequency of text"
+	frequency = {}
+	for char in text:
+    		if char in frequency:
+        		frequency[char] += 1
+    		else:
+        
+       			 frequency[char] = 1
+	for char, freq in frequency.items():
+    		print(f"'{char}': {freq}")
+	total_char=items(frequency.value())
+	percentage=(frequency/total_char)*100
+	print(percentage)
+
+
+21. Perform modular arithmetic operation 
+
+
+
+
+22. Find the prime numbers 
+    check the given number is prime or not 
+	a=7
+	if a==1 or a==0:
+	print('not prime')
+		for i in range(2,int (a/2)+1):
+			if (a%i)==0:
+				print(' not prime')
+				break
+			else:
+				print('prime')
+				break	
+
+
+
+
+    print the prime numbers with the given range 
+	in=int(input('enter the range')
+	for a in range(0,in): 
+		if a==1 or a==0:
+		print('not prime')
+			for i in range(2,int (a/2)+1):
+				if (a%i)==0:
+					print(' not prime')
+					break
+				else:
+					print('prime')
+					break	
+
+
+
+
+
+
+23. Check the given two numbers are co prime or not 
+def coprime(a, b): 
+      
+    if ( __gcd(a, b) == 1): 
+        print("Co-Prime") 
+    else: 
+        print("Not Co-Prime")  
+
+
+
+
+
+24. find the factors for the given number ( can use python library)
+25. generate 10 random numbers 
+Import random
+a=randint(10)
+print(a)
+26. Explore : Miller-Rabin Test (pen paper method)
+
+  “Don’t worry about failures, worry about the chances you miss when you don’t even try.”
+                              – JACK CANFIELD
+
+
